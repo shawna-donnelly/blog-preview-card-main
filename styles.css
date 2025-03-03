@@ -46,8 +46,8 @@ h3 {
   flex: 1;
   flex-direction: column;
   background-color: var(--color-white);
-  width: 384px;
-  height: 522px;
+  width: 336px;
+  height: 474px;
   border-radius: 20px;
   gap: 24px;
   padding: 24px;
