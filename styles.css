@@ -1,0 +1,109 @@
+:root {
+  --main-bg-color: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --font-primary: 'Figtree', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--color-gray-950);
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;    /* centers vertically */
+  min-height: 100vh;      /* ensures the container takes up full viewport height */
+  margin: 0;  
+  font-size: 16px;
+  font-family: var(--font-primary);
+  background-color: var(--main-bg-color);
+  line-height: 150%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+  color: var(--color-gray-950);
+}
+
+.description {
+  color: var(--color-gray-500);
+}
+
+.card {
+  display: flex; 
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--color-white);
+  width: 384px;
+  height: 522px;
+  border-radius: 20px;
+  gap: 24px;
+}
+
+.content-container {
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 24px;
+}
+
+.image-container {
+  border-radius: 10px;
+  overflow: hidden; /* Clips the image to the rounded corners */
+  margin: 24px 24px 0 24px;
+}
+
+.image-container img {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+.user-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: 0 24px;
+  
+}
+
+.user-container > p{
+  margin-left: 8px;
+}
+
+.tag {
+  background-color: var(--main-bg-color);
+  display: inline-block; /* Changed from inline to inline-block */
+  padding: 4px 12px;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 4px;
+  line-height: 150%;
+}
+
+.published {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
