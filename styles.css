@@ -50,6 +50,7 @@ h3 {
   height: 522px;
   border-radius: 20px;
   gap: 24px;
+  box-shadow: 8px 8px hsl(0, 0%, 0%);
 }
 
 .content-container {
