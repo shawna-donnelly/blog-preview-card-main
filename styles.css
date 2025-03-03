@@ -10,6 +10,7 @@ html {
   box-sizing: border-box;
   color: var(--color-gray-950);
   font-weight: 500;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 body {
@@ -18,7 +19,6 @@ body {
   align-items: center;    /* centers vertically */
   min-height: 100vh;      /* ensures the container takes up full viewport height */
   margin: 0;  
-  font-size: 16px;
   font-family: var(--font-primary);
   background-color: var(--main-bg-color);
   line-height: 150%;
@@ -35,6 +35,11 @@ h3 {
   line-height: 150%;
   margin: 0;
   color: var(--color-gray-950);
+
+  &:hover {
+    color: var(--main-bg-color);
+    cursor: pointer;
+  }
 }
 
 .description {
@@ -47,8 +52,8 @@ h3 {
   flex: 1;
   flex-direction: column;
   background-color: var(--color-white);
-  width: 336px;
-  height: 474px;
+  max-width: 336px;
+  max-height: 474px;
   border-radius: 20px;
   gap: 24px;
   padding: 24px;
