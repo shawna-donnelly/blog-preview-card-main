@@ -55,7 +55,7 @@ h3 {
 .content-container {
   flex-direction: column;
   gap: 12px;
-  margin: 0 24px;
+  margin: 0px 24px;
 }
 
 .image-container {
@@ -73,16 +73,18 @@ h3 {
 
 .user-container {
   display: flex;
-  flex: 1;
+  flex-shrink: 1;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  margin: 0 24px;
-  
+  margin: 0 24px 24px 24px;
+  gap: 12px
 }
 
-.user-container > p{
-  margin-left: 8px;
+.author {
+  margin: 0;
+  font-weight: 800;
+  font-size: 14px;
 }
 
 .tag {
